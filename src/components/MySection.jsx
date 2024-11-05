@@ -1,13 +1,9 @@
 import PropTypes from "prop-types";
 
-function MySection({ title, h2Styles, children }) {
+function MySection({ title, children }) {
   return (
-    <section
-      id={`${title.toLowerCase()}`}
-      aria-labelledby="services-heading"
-      className="my-8"
-    >
-      <h2 id="services-heading" className={h2Styles}>
+    <section id={`${title.toLowerCase()}`} className="mt-8 space-y-8 scroll-mt-24">
+      <h2 className="text-4xl font-extrabold tracking-tight text-red-500">
         {title}
       </h2>
       {children}

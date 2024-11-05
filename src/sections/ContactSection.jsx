@@ -3,14 +3,14 @@
 import { Button } from "flowbite-react";
 
 export default function ContactSection() {
-  const inputStyles = "focus:ring-4 focus:ring-primary rounded-lg w-full";
-  const labelStyles = "text-white w-full font-semibold block mb-2";
+  const inputStyles = "focus:ring-4 focus:ring-red-700 focus:border-none rounded-lg w-full bg-zinc-900 text-white placeholder-gray-500";
+  const labelStyles = "text-red-500 font-semibold block mb-2";
 
   return (
-    <form className="flex text-left w-96 flex-col gap-4 p-3 rounded-lg bg-zinc-800">
+    <form className="flex w-80 text-left flex-col gap-4 p-4 rounded-lg bg-black border border-zinc-700 sm:w-96">
       {/* EMAIL */}
       <div>
-        <label htmlFor="email" className={`${labelStyles}`}>
+        <label htmlFor="email" className={labelStyles}>
           Your Email
         </label>
         <input
@@ -18,29 +18,28 @@ export default function ContactSection() {
           type="email"
           placeholder="johndoe@example.com"
           required
-          className={`${inputStyles}`}
+          className={inputStyles}
         />
       </div>
       {/* SUBJECT */}
       <div>
-        <label htmlFor="subject" value="Subject" className={`${labelStyles}`}>
+        <label htmlFor="subject" className={labelStyles}>
           Subject
         </label>
-        <input id="subject" type="text" required className={`${inputStyles}`} />
+        <input id="subject" type="text" required className={inputStyles} />
       </div>
       {/* MESSAGE */}
       <div>
-        <div className="mb-2 block">
-          <label htmlFor="message" className={`${labelStyles}`}>
-            Message
-          </label>
-        </div>
-        <textarea id="message" rows={6} required className={`${inputStyles}`} />
+        <label htmlFor="message" className={labelStyles}>
+          Message
+        </label>
+        <textarea id="message" rows={6} required className={inputStyles} />
       </div>
       {/* SUBMIT */}
       <Button
         type="submit"
-        className="bg-zinc-700 hover:!bg-zinc-600 font-semibold focus:ring-4 focus:ring-primary"
+        color="failure"
+        className=" bg-red-500  text-white font-semibold focus:ring-4 focus:ring-red-700"
       >
         Submit
       </Button>
