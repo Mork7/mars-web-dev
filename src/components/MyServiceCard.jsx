@@ -1,4 +1,4 @@
-import { Card, Button } from "flowbite-react";
+import { Card } from "flowbite-react";
 import PropTypes from "prop-types";
 
 function MyServiceCard({
@@ -61,13 +61,6 @@ function MyServiceCard({
           </li>
         ))}
       </ul>
-      <Button
-        type="button"
-        color="failure"
-        className="bg-red-500 hover:bg-red-600 font-semibold focus:ring-4 focus:ring-red-700 text-white"
-      >
-        Choose plan
-      </Button>
     </Card>
   );
 }
