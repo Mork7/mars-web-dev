@@ -2,7 +2,7 @@ import MyTemplateCard from "../components/MyTemplateCard";
 
 export default function TemplatesSection() {
   return (
-    <section className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-12 w-screen bg-zinc-800 p-8 justify-items-center">
+    <section className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-12 w-screen bg-zinc-800 py-8 md:px-8 lg:px-10 2xl:px-36 justify-items-center">
       <MyTemplateCard
         title="Restaurant Red"
         description="This template is for a restaurant, with an emphasis on dining. Just send us the media you wish to display and we will do the rest."

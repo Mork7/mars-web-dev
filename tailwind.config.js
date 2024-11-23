@@ -12,7 +12,7 @@ export default {
         },
       },
       animation: {
-        fadeIn: "fadeIn 2.5s ease-out forwards",
+        fadeIn: "fadeIn 3.5s ease-out forwards",
       },
       colors: {
         primary: "#B72020",
