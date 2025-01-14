@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Navbar -->
+    <header class="bg-red-600 text-white shadow-md">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <a href="#" class="text-2xl font-bold">Your Restaurant Name</a>
+        <nav>
+          <ul class="flex space-x-6">
+            <li><a href="#about" class="hover:text-gray-200">About</a></li>
+            <li><a href="#menu" class="hover:text-gray-200">Menu</a></li>
+            <li><a href="#contact" class="hover:text-gray-200">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-cover bg-center h-96"
+        style="background-image: url('../../restaurant.avif');"
+    >
+      <div
+        class="bg-black bg-opacity-50 h-full flex items-center justify-center"
+      >
+        <h1 class="text-5xl text-white font-bold text-center">
+          Welcome to Your Restaurant
+        </h1>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto p-8 text-center">
+      <h2 class="text-3xl font-bold mb-4">About Us</h2>
+      <p class="text-gray-700">
+        At Your Restaurant, we offer a delightful dining experience with a
+        variety of dishes to tantalize your taste buds. Our ingredients are
+        fresh, and our recipes are crafted with love.
+      </p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="bg-gray-200 py-8 px-2">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-6">Our Menu</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+          <!-- Menu Item 1 -->
+          <div class="bg-white p-4 rounded shadow">
+            <img
+              src="/food1.avif"
+              alt="Dish"
+              class="rounded mb-4 h-96 w-full object-cover"
+            />
+            <h3 class="text-xl font-bold">Dish Name</h3>
+            <p class="text-gray-600">A brief description of the dish.</p>
+            <p class="text-red-600 font-bold mt-2">$12.99</p>
+          </div>
+          <!-- Menu Item 3 -->
+          <div class="bg-white p-4 rounded shadow">
+            <img
+              src="/food2.avif"
+              alt="Dish"
+                class="rounded mb-4 h-96 w-full object-cover"
+            />
+            <h3 class="text-xl font-bold">Dish Name</h3>
+            <p class="text-gray-600">A brief description of the dish.</p>
+            <p class="text-red-600 font-bold mt-2">$9.99</p>
+          </div>
+          <!-- Menu Item 2 -->
+          <div class="bg-white p-4 rounded shadow">
+            <img
+              src="/food3.avif"
+              alt="Dish"
+                class="rounded mb-4 h-96 w-full object-cover"
+            />
+            <h3 class="text-xl font-bold">Dish Name</h3>
+            <p class="text-gray-600">A brief description of the dish.</p>
+            <p class="text-red-600 font-bold mt-2">$14.99</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto p-8 text-center">
+      <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+      <p class="text-gray-700 mb-8">
+        We'd love to hear from you! Visit us at our location or give us a call
+        for reservations or inquiries.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Location -->
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-bold mb-2">Our Location</h3>
+          <p class="text-gray-700">123 Main Street<br />City, Province Postal Code</p>
+        </div>
+
+        <!-- Phone -->
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-bold mb-2">Phone</h3>
+          <p class="text-gray-700">
+            <a href="tel:+11234567890" class="text-red-600 hover:underline"
+              >+1 (123) 456-7890</a
+            >
+          </p>
+        </div>
+
+        <!-- Hours of Operation -->
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-bold mb-2">Hours of Operation</h3>
+          <p class="text-gray-700">
+            Monday - Friday: 9:00 AM - 9:00 PM<br />
+            Saturday: 10:00 AM - 11:00 PM<br />
+            Sunday: 10:00 AM - 8:00 PM
+          </p>
+        </div>
+
+        <!-- Email -->
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-bold mb-2">Email</h3>
+          <p class="text-gray-700">
+            <a
+              href="mailto:contact@yourbusiness.com"
+              class="text-red-600 hover:underline"
+              >contact@yourbusiness.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-red-600 text-white text-center py-4">
+      <p>&copy; 2024 Your Restaurant. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
