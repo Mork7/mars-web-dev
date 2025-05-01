@@ -1,3 +1,2 @@
-#Mars Web Development
-Test
-Test
+# Mars Web Development
+## Windsor, Ontario, Canada
